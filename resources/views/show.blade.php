@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <h1 class="text-center"> Vizualizar</h1>
+    <h1 class="text-center">Vizualizar</h1>
 
     <div class="col-6 m-auto" class="text-center">
         @php
@@ -27,6 +27,5 @@
             <button class="btn btn-link">Voltar</button>
         </a>
     </div>
-
 
 </html>

@@ -25,7 +25,7 @@
             <input class="form-control m-2" type="text" required name="title" id="title" placeholder="Titulo">
 
             <div class="input-group m-2">
-                <select class="form-control" required name="id_user" id="id_user">
+                <select id="opt-autor" class="form-control" required name="id_user" id="id_user">
                     <option value="">Selecione um autor</option>
                     @foreach($users as $user)
                     <option value="{{$user->id}}">{{$user->name}}</option>
@@ -35,7 +35,7 @@
                     <a href=" {{url('autor/create')}}">
                         <button class="btn btn-outline-dark" type="button" id="button-addon2">novo</button>
                     </a>
-                    <button class="btn btn-outline-danger" type="button">excluir</button>
+                    <button id="btn-excluir" class="btn btn-outline-danger" type="button">excluir</button>
                 </div>
             </div>
 
@@ -48,6 +48,7 @@
             <button class="btn btn-link">Voltar</button>
         </a>
     </div>
+    <script src="{{url("assets/js/javascript.js")}}"></script>
 </body>
 
 </html>

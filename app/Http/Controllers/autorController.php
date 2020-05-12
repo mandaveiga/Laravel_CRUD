@@ -97,6 +97,7 @@ class autorController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $this->objUser->where(['id' => $id])->delete();
+        return redirect('books/create');
     }
 }

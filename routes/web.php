@@ -24,3 +24,4 @@ Route::post('/books', 'bookController@store');
 
 Route::post('/autor', 'autorController@store');
 Route::get('autor/create', 'autorController@create');
+Route::get('autor/delete/{id}', 'autorController@destroy');
